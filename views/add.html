@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+  <div class="container">
+    <h2>添加学生信息</h2>
+  <form action="/student/add" method="post">
+    <div class="form-group">
+      <label for="name">姓名</label>
+      <input type="text" class="form-control" id="name" placeholder="姓名" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="age">年龄</label>
+      <input type="number" class="form-control" id="age" placeholder="年龄" name="age" max=120 required>
+    </div>
+    <div class="form-group">
+      性别：
+      <label class="radio-inline">
+        <input type="radio" name="gender" id="gender" value="0" checked> 男
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="gender" id="gender" value="1"> 女
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="hobbies">爱好</label>
+      <input type="text" class="form-control" id="hobbies" placeholder="爱好" name="hobbies" maxlength="30" required>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+  </form>
+</div>
+</body>
+</html>
